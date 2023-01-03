@@ -1,13 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /*400,600*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /*400*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 :root {
-    --Violet: hsl(257, 40%, 49%);
-    --Soft-Magenta: hsl(300, 69%, 71%);
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--Violet);
+  font-family: "Poppins", serif;
+  background-image: url(images/bg-desktop.svg);
+  background-position-x: -100px;
+}
+
+main {
+  padding: 3rem 4.5rem;
+}
+
+.middle-section {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 4rem;
+}
+
+.img-container {
+  width: 650px;
+  height: 400px;
+}
+
+.illustration {
+  width: 650px;
+}
+
+.text-container {
+  box-sizing: border-box;
+  max-width: 650px;
+  height: 400px;
+  padding: 1rem 2rem;
+}
+
+.text-container h1 {
+  font-size: 2.2rem;
+  color: white;
+  width: 85%;
+}
+
+.text-container p {
+  color: rgb(236, 234, 234);
+  width: 98%;
+  font-family: 'Open Sans', serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.btn-reg {
+  margin-top: 0.5rem;
+  border: none;
+  width: 180px;
+  height: 50px;
+  color: var(--Violet);
+  background-color: white;
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.445);
+}
+
+.btn-reg:hover {
+  cursor: pointer;
+  background-color: var(--Soft-Magenta);
+  color: white;
+}
+
+.icon-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  gap: 1rem;
+  width: 95%;
+  height: 180px;
+}
+
+.icon-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.icon-container svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+.icon-container div:hover {
+  cursor: pointer;
+  border: 1px solid var(--Soft-Magenta);
+}
+.icon-container svg:hover {
+  cursor: pointer;
+  fill: var(--Soft-Magenta);
 }
